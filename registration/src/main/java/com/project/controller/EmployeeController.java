@@ -1,6 +1,5 @@
 package com.project.controller;
 
-import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -29,7 +28,7 @@ public class EmployeeController {
 		
 		@CrossOrigin
 		@PostMapping("addEmployee")
-		public Employee saveEmployee(@Valid @RequestBody Employee employee) {
+		public Employee saveEmployee(@RequestBody Employee employee) {
 			
 			return empService.saveEmployee(employee);
 		}
