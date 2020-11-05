@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Reg logo" src="./assets/logo.png">
+    <background-image  alt="Reg logo" src="./assets/logo.png">
     <Home msg="Home Page!"/>
   </div>
 </template>
@@ -14,6 +14,7 @@ export default {
     Home
   }
 }
+
 </script>
 
 <style>
